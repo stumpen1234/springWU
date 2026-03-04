@@ -15,9 +15,9 @@ body{
 
 
 #container{
-    align-items: center;
-    display:flex;
-    flex-direction: column;
+  
+        display:flex;
+        flex-direction: column;
 }
 
     header { 
@@ -26,7 +26,7 @@ body{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        height:10%;
+        height:30px;
         width:100vw;
         position: fixed;
         border-radius: 0px 0px 5px 5px;
@@ -59,54 +59,89 @@ body{
     }
     
     main {
-        background-color: aquamarine;
-        height: 120vh;
-        width:100vw;
+        display: flex;
+        justify-content: center;
+        padding-top:40px ;
+        min-height:140vh;
+        width:100vw;        
+        background-color: aqua;
+        background-image: url(../img/banner3.webp);
+
+        background-size:cover;
+        background-position: center;
+        background-repeat:no-repeat;
+     
     }
     .rubrik{
-
+        background-color:transparent;
     }
-    img{
-        width:100vw;
-        height:100vh;
-        object-fit: cover;
+    h2{
+        margin:0px;
+        color:white;
+        font-size: 30px;
     }
+    p{
+        margin: 0px;
+        color:white;
+        font-size: 15px;
+    }
+  
     
-    div {
-        background-color: antiquewhite;
-        height: 150px;
+    .main2{
+        padding: 30px;
+        background-color: white;
+        height:AUTO;
     }
     
     .text {
-        background-color: black;
-        height: 50px;
+        display: flex;
+        flex-direction: column;
+        margin:10px;
+        padding-bottom: 10px;
+        background-color:white;
+        
+    }
+    h3{
+        font-size: 30px;
+        color: #0d600d;
+    }
+    .paragraf{
+        font-size: 20px;
+        line-height: 20px;
+        color:#0d600d;
+
     }
     
     .picture {
-        background-color: brown;
-        height: 50px;
+        min-height: 300px;
+        border-radius: 10px;
+        background-image: url(../img/bakelse1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 10px;
+       
+        
     }
     
     footer {
-        background-color: azure;
-        height: 100px;
+        background-color:rgba(30, 74, 48);
+        height: auto;
+    }
+
+    h4,h5,h6{
+        font-size: 20px;
+        color:white;
+    }
+    li{
+        margin-bottom:5px ;
+        color:white;
     }
 
 
 
 
 
-
-
-    @media(max-width:600px){
-        #container{
+    @media(min-width:600px){
   
-            display:flex;
-            flex-direction: column;
-        }
-        header{
-            background-color: white;
-            display: flex;
-            justify-content: space-between;
-        }
     }
