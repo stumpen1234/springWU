@@ -63,6 +63,7 @@ body{
         margin-bottom:40px;
     }
     .tiny{
+
         margin-left:10px;
         margin-bottom:25px;
         font-size:25px;
@@ -118,15 +119,13 @@ body{
         color: #0d600d;
     }
     
-    main {
+    .sida1{
         display: flex;
-        justify-content: center;
+        justify-content:center;
         padding-top:40px ;
-        
         min-height:110vh;
         width:100vw;        
         background-image: url(../img/banner3.webp);
-
         background-size:cover;
         background-position: center;
         background-repeat:no-repeat;
@@ -215,13 +214,13 @@ body{
         .lapNav{
             display: flex;
         }
-        main{
+        .sida1{
             min-height:140vh;
             justify-content: left;
             padding-top: 70px;
         }
        .rubrik{
-        padding-left:50px;
+        padding-left:px;
         padding-top: 50px;
        }
        h2{
@@ -238,3 +237,56 @@ body{
         height:30vw
        }
     }   
+
+
+
+    /* sida:meny */ 
+    
+#container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.food-itmes{
+    height: 15vh;
+    background-color: #0d600d;
+}
+.sida2{
+    display: flex;
+    flex-direction: column;
+    height: 500vh;
+    width:100vw;
+    
+}
+
+.namn{
+    padding-top:0; /*kanske tars bort sen */
+    font-size: 35px;
+    color:#0d600d
+}
+    
+
+.display{
+    display: flex;
+    flex-direction: row;
+    align-self:flex-start ;
+    justify-content:flex-start ;
+    flex-wrap:wrap;
+   
+    background-color: #0d600d;
+}
+.box{
+    flex-direction: column;
+    justify-content: center;
+    margin:20px;
+    margin-left:85px;
+    height:50vh;
+    width:25vw;
+    background-color: beige;
+    border-radius: 20px;
+}
+.items{
+    width:20vw;
+    height:40vh;
+}
