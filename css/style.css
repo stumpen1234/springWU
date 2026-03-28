@@ -127,8 +127,8 @@ body{
     .sida1{
         display: flex;
         justify-content:center;
-        padding-top:40px ;
-        min-height:110vh;
+        padding-top:40px;
+        min-height:50vh;
         width:100vw;        
         background-image: url(../img/banner3.webp);
         background-size:cover;
@@ -138,7 +138,7 @@ body{
     }
     .rubrik{
         font-family: Sans-serif;
-       margin-top:30px; 
+       margin-top:15px; 
         background-color:transparent;
         margin-left:60px;
     }
@@ -217,7 +217,7 @@ body{
 
 
 
-    @media(min-width:600px){
+    @media(min-width:1000px){
         header{
             height:70px;
         }
@@ -228,26 +228,33 @@ body{
             display: flex;
         }
         .sida1{
-            min-height:140vh;
+            min-height:80vh;
             justify-content: left;
             padding-top: 70px;
         }
        .rubrik{
-        padding-left:px;
+        margin-top:510px;
         padding-top: 50px;
        }
        h2{
+        color: #093609;
         font-size: 50px;
        }
        p{
+        color: #093609;
         font-size: 20px;
        }
        .main2{
+        justify-content: center;
         flex-direction: row;
+        
        }
        .picture{
-        width:100vw;
-        height:30vw
+        width:25vw;
+        height:18vw
+       }
+       .text{
+        width:20vw;
        }
     }   
 
@@ -266,32 +273,39 @@ body{
     background-color: #0d600d;
 }
 .sida2{
-    
+    padding-left:30vw;
+    padding-right:30vw;
     display: flex;
     flex-direction: column;
-    
+    background-color: rgb(243, 238, 238);
     height: auto;
-    width:100vw;
+    width:auto;
     
 }
 
 .namn{
-    font-family: Sans-serif;
-   
-    font-size: 35px;
-    color:#093609
+    margin-top:100px;
+    margin-bottom: 20px;
+  
+    font-family: "Caveat Brush";
+    font-size: 50px;
+    color:#093609;
 }
     
+.namn_mat{
+
+    font-size: 30px;
+    color:#093609;
+      font-family: Sans-serif;
+}
 
 .display{
-
+    
     display: flex;
     flex-direction: row;
-    align-self:flex-start ;
-    justify-content:flex-start ;
     flex-wrap:wrap;
-   
-    background-color: whitesmoke;
+   width:40vw;
+    
 }
 .box{
     display: flex;
@@ -299,10 +313,10 @@ body{
     
     align-items: center;
     margin-bottom: 20px;
-    margin-left:70px;
+    margin-right:100px;
     height:auto;
     width:auto;
-    background-color: green;
+    background-color:rgb(243, 233, 233);
     border-radius: 20px;
 }
 .items{
