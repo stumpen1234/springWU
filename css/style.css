@@ -57,24 +57,26 @@ body{
         left:0vw;
     }
     .meny{
+        font-family: Sans-serif;
         margin-left:10px;
-        color:#0d600d;
+        color:#093609;
         font-size:40px;
         margin-bottom:40px;
     }
     .tiny{
-
+        font-family: Sans-serif;
         margin-left:10px;
         margin-bottom:25px;
         font-size:25px;
-        color:#0d600d
+        color:#093609
     }
     .icon{
-        width:50px;
-        height:50px;
+        width:30px;
+        height:30px;
     }
 
     h1{
+        font-family: Sans-serif;
         display: flex;
         align-items:center;
         justify-content: center;        
@@ -108,6 +110,9 @@ body{
         height:25px;
     }
     .lapText{
+        font-family: Sans-serif;
+        display: flex;
+        justify-content: center;
         color: #0d600d;
         font-size: x-large;
         text-decoration: none;
@@ -116,7 +121,7 @@ body{
     }
     a{
         text-decoration: none;
-        color: #0d600d;
+        color: #093609;
     }
     
     .sida1{
@@ -132,7 +137,10 @@ body{
      
     }
     .rubrik{
+        font-family: Sans-serif;
+       margin-top:30px; 
         background-color:transparent;
+        margin-left:60px;
     }
     h2{
         margin:0px;
@@ -163,20 +171,23 @@ body{
         
     }
     h3{
+        font-family: Sans-serif;
         font-size: 30px;
-        color: #0d600d;
+        color: #093609;
     }
     .paragraf{
         font-size: 20px;
         line-height: 20px;
-        color:#0d600d;
+        color:#093609;
 
     }
     
     .picture {
+        
+        max-width: 1000px;
         min-height: 300px;
         border-radius: 10px;
-        background-image: url(../img/bakelse1.png);
+        background-image: url(../img/semla.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -186,15 +197,17 @@ body{
     }
     
     footer {
-        background-color:rgba(30, 74, 48);
+        background-color:#093609;
         height: auto;
     }
 
     h4,h5,h6{
+        font-family: Sans-serif;
         font-size: 20px;
         color:white;
     }
     li{
+        font-family: Sans-serif;
         margin-bottom:5px ;
         margin-left:5px;
         color:white;
@@ -253,40 +266,46 @@ body{
     background-color: #0d600d;
 }
 .sida2{
+    
     display: flex;
     flex-direction: column;
-    height: 500vh;
+    
+    height: auto;
     width:100vw;
     
 }
 
 .namn{
-    padding-top:0; /*kanske tars bort sen */
+    font-family: Sans-serif;
+   
     font-size: 35px;
-    color:#0d600d
+    color:#093609
 }
     
 
 .display{
+
     display: flex;
     flex-direction: row;
     align-self:flex-start ;
     justify-content:flex-start ;
     flex-wrap:wrap;
    
-    background-color: #0d600d;
+    background-color: whitesmoke;
 }
 .box{
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin:20px;
-    margin-left:85px;
-    height:50vh;
-    width:25vw;
-    background-color: beige;
+    
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left:70px;
+    height:auto;
+    width:auto;
+    background-color: green;
     border-radius: 20px;
 }
 .items{
-    width:20vw;
-    height:40vh;
+    width: auto;;
+    height:20vh;
 }
