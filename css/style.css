@@ -138,18 +138,22 @@ body{
     }
     .rubrik{
         font-family: Sans-serif;
-       margin-top:15px; 
+       margin-top:5px; 
         background-color:transparent;
         margin-left:60px;
+        width: 60VW;
+        height: 25vh;
+        background-color: rgba(234, 225, 225, 0.501);
+        border-radius: 10px;
     }
     h2{
         margin:0px;
-        color:white;
+        color:#093609;
         font-size: 30px;
     }
     p{
         margin: 0px;
-        color:white;
+        color:#093609;
         font-size: 15px;
     }
   
@@ -233,8 +237,11 @@ body{
             padding-top: 70px;
         }
        .rubrik{
-        margin-top:510px;
-        padding-top: 50px;
+        margin-top: 65PX;
+        width:30VW;
+        margin-left: 150px;
+        height: 20vh;
+        background-color: rgba(234, 225, 225, 0.214);
        }
        h2{
         color: #093609;
@@ -263,14 +270,26 @@ body{
     /* sida:meny */ 
     
 #container{
+    
+    
     display: flex;
     flex-direction: column;
+    
+    
 
 }
 
 .food-itmes{
-    height: 15vh;
-    background-color: #0d600d;
+    padding-top:70px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    height: auto;
+    background-color:#a9f4a9;
+    width: 100vw;
+}
+.beskrivning{
+    margin-left: 20vw;
 }
 .sida2{
     padding-left:30vw;
@@ -282,7 +301,27 @@ body{
     width:auto;
     
 }
+.rubrik2{
+    font-family: "Caveat Brush";
+    font-size: 50px;
+    color:#093609;
+    width: 100px;
+    height: 30px;
 
+}
+.meny_beskrivning{
+    font-size: 20px;
+    width: 50vw;
+    color: #093609;
+    letter-spacing: 1px;
+    font-family: Sans-serif;
+    padding-bottom: 6px;
+}
+
+
+.item_menu{
+    height:7vh;
+}
 .namn{
     margin-top:100px;
     margin-bottom: 20px;
@@ -313,7 +352,7 @@ body{
     
     align-items: center;
     margin-bottom: 20px;
-    margin-right:100px;
+    margin-right:30px;
     height:auto;
     width:auto;
     background-color:rgb(243, 233, 233);
@@ -322,4 +361,30 @@ body{
 .items{
     width: auto;;
     height:20vh;
+}
+
+@media(max-width:1000px){
+
+        .sida2{
+            padding-left:0;
+            padding-right: 0px;
+            
+            
+            
+        }
+        .namn{
+            padding-left: 10px;
+        }
+        .display{
+            width: 90vw;
+            padding-left: 10vw;
+        }
+        .meny_beskrivning{
+            font-size: 15px;
+            letter-spacing: 0px;
+            width: auto;
+        }
+        .beskrivning{
+            margin-left: 10px;
+        }
 }
