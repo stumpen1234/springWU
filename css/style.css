@@ -344,7 +344,7 @@ align-items: center;
     font-size: 30px;
     white-space: nowrap;
 }
-#Varma_Drycker,#Kaffe,#Kalla_Drycker,#te,#Mackor,#Lunch,#Bakverk{
+#Varma_Drycker,#Kaffe,#Kalla_Drycker,#Te,#Mackor,#Lunch,#Bakverk{
     margin-top:100px;
     margin-bottom: 20px;
   
@@ -395,7 +395,7 @@ align-items: center;
             
             
         }
-        #Varma_Drycker,#Kaffe,#Kalla_Drycker,#te,#Mackor,#Lunch,#Bakverk{
+        #Varma_Drycker,#Kaffe,#Kalla_Drycker,#Te,#Mackor,#Lunch,#Bakverk{
             padding-left: 10px;
         }
         .item_menu{
