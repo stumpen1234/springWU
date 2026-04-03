@@ -9,7 +9,7 @@ html {
 }
 body{
     margin:0px;
-    
+    background-color: #093609;
 }
 
 
@@ -138,12 +138,12 @@ body{
     }
     .rubrik{
         font-family: Sans-serif;
-       margin-top:5px; 
+       margin-bottom:560px; 
         background-color:transparent;
         margin-left:60px;
         width: 60VW;
-        height: 25vh;
-        background-color: rgba(234, 225, 225, 0.501);
+        height: auto;
+        background-color: rgba(234, 225, 225, 0.527);
         border-radius: 10px;
     }
     h2{
@@ -237,11 +237,12 @@ body{
             padding-top: 70px;
         }
        .rubrik{
-        margin-top: 65PX;
+        margin-top:65px;
+        margin-bottom: 870PX;
         width:30VW;
         margin-left: 150px;
-        height: 20vh;
-        background-color: rgba(234, 225, 225, 0.214);
+        height: auto;
+        background-color: rgba(234, 225, 225, 0.63);
        }
        h2{
         color: #093609;
@@ -285,7 +286,7 @@ body{
     flex-direction: column;
     justify-content: left;
     height: auto;
-    background-color:#a9f4a9;
+    background-color:#d4f1c6;
     width: 100vw;
 }
 .beskrivning{
@@ -320,9 +321,30 @@ body{
 
 
 .item_menu{
-    height:7vh;
+
+    width: auto;
+    top:70px;
+    display: flex;
+justify-content: space-evenly;
+align-items: center;
+    height:AUTO;
+    flex-wrap: nowrap;
+    gap:20px;
+     position:sticky;
+       z-index:1000;
+       background-color: white;
 }
-.namn{
+.nav{
+
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    white-space: nowrap;
+}
+#Varma_Drycker,#Kaffe,#Kalla_Drycker,#te,#Mackor,#Lunch,#Bakverk{
     margin-top:100px;
     margin-bottom: 20px;
   
@@ -355,6 +377,7 @@ body{
     margin-right:30px;
     height:auto;
     width:auto;
+
     background-color:rgb(243, 233, 233);
     border-radius: 20px;
 }
@@ -372,8 +395,13 @@ body{
             
             
         }
-        .namn{
+        #Varma_Drycker,#Kaffe,#Kalla_Drycker,#te,#Mackor,#Lunch,#Bakverk{
             padding-left: 10px;
+        }
+        .item_menu{
+            top:30px;
+             overflow-x: scroll;
+    overflow-y: hidden;
         }
         .display{
             width: 90vw;
