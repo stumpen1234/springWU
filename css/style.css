@@ -14,7 +14,7 @@ body{
 
 
 
-#container{
+.container{
   
         display:flex;
         flex-direction: column;
@@ -293,15 +293,7 @@ body{
 
     /* sida:meny */ 
     
-#container{
-    
-    
-    display: flex;
-    flex-direction: column;
-    
-    
 
-}
 
 .food-itmes{
     padding-top:70px ;
@@ -354,7 +346,7 @@ align-items: center;
     flex-wrap: nowrap;
     gap:20px;
      position:sticky;
-       z-index:1000;
+       z-index:900;
        background-color: white;
 }
 .nav{
@@ -438,4 +430,52 @@ align-items: center;
         .beskrivning{
             margin-left: 10px;
         }
+}
+
+
+
+/*sida hittaoss*/ 
+   .coffe_shop{
+width: 100vw;
+height: 80vh;
+   background-image: url(../img/coffee-shop.png);
+   background-position: center;
+   background-size:cover;
+   background-repeat: no-repeat;
+}
+.sida3{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100vw;
+    background-color: rgb(245, 230, 230);
+}
+.vagbeskrivning{
+    font-size: 20px;
+    color:#093609;
+    text-align: center;
+   
+}   
+.vag_rubrik_h1{
+    margin-top: 140px;
+    font-size: 30px;
+    color: #093609;
+    text-align: center;
+}
+.vag_rubrik{
+    margin-top: 150px;
+    font-size: 25px;
+    color:#093609;
+    text-align: center;
+    
+}
+.information{
+    display: flex;
+    flex-direction: column;
+   
+    width: 50vw;
+    
+}
+ul{
+    list-style: none;
 }
