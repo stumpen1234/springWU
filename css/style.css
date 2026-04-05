@@ -200,20 +200,26 @@ body{
         
     }
     .coffe_banner{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         background-color: rgb(92, 113, 100);
         width: 100vw;
-        min-height: 500px;
-        background-image:url(../img/coffe-banner.png);
-        background-repeat: no-repeat;
-        background-size:contain;
-        background-position: right;
+        height: 500px;
+
+    }
+    .banner{
+        margin-top: auto;
+        width: 50vw;
+        height:200px
     }
     .inbjudan{
         color: rgb(235, 221, 221);
-        width: 20vw;
+        width: 40vw;
          margin-left:70px;
          margin-top: 70px;
          letter-spacing: 0.2px;
+         z-index: 2;
     }
     .button{
            height:25px;
@@ -224,7 +230,7 @@ body{
         height: auto;
     }
 
-    h4,h5,h6{
+    h4,h5{
         font-family: Sans-serif;
         font-size: 20px;
         color:white;
@@ -240,7 +246,7 @@ body{
 
 
 
-    @media(min-width:1000px){
+    @media(min-width:1200px){
         header{
             height:70px;
         }
@@ -254,8 +260,22 @@ body{
             min-height:80vh;
             justify-content: left;
             padding-top: 70px;
+                 }
+      
+       .button{
+        height:50px;
+        width:150px;
+       }
+      .banner{
+        width:40vw;
+        height:500px
+       }
         }
-       .rubrik{
+        
+       
+    /* såg lite konstigt ut när man minskade så ändrade det  genom lägga till en till media */
+    @media(min-width:1000px){
+        .rubrik{
         margin-top:65px;
         margin-bottom: 870PX;
         width:30VW;
@@ -280,15 +300,11 @@ body{
         width:25vw;
         height:18vw
        }
-       .text{
+         .text{
         width:20vw;
        }
-       .button{
-        height:50px;
-        width:150px;
-       }
-    }   
-
+    
+}
 
 
     /* sida:meny */ 
@@ -318,6 +334,7 @@ body{
     
 }
 .rubrik2{
+    margin-bottom:26px;
     font-family: "Caveat Brush";
     font-size: 50px;
     color:#093609;
@@ -430,6 +447,7 @@ align-items: center;
         .beskrivning{
             margin-left: 10px;
         }
+      
 }
 
 
@@ -437,7 +455,7 @@ align-items: center;
 /*sida hittaoss*/ 
    .coffe_shop{
 width: 100vw;
-height: 80vh;
+height: 90vh;
    background-image: url(../img/coffee-shop.png);
    background-position: center;
    background-size:cover;
@@ -445,7 +463,9 @@ height: 80vh;
 }
 .sida3{
     display: flex;
-    justify-content: center;
+    
+    align-items: center;
+    flex-direction: column;
     height: auto;
     width: 100vw;
     background-color: rgb(245, 230, 230);
@@ -456,7 +476,7 @@ height: 80vh;
     text-align: center;
    
 }   
-.vag_rubrik_h1{
+.vag_rubrik_h2{
     margin-top: 140px;
     font-size: 30px;
     color: #093609;
@@ -478,4 +498,57 @@ height: 80vh;
 }
 ul{
     list-style: none;
+}
+.tids_tabell{
+    border-top: solid ;
+    border-color: gray;
+    border-width: 1px
+    
+;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height:auto;
+    width: 50vw;
+    background-color: rgb(245, 230, 230);
+    margin-bottom: 10px;
+    
+}
+.tid,.kontakt{
+    color: #093609;
+    font-size: 20px;
+}
+
+.rubrik_tider,.rubrik_kontakt{
+    color: #093609;
+    font-size: 30px;
+}
+
+
+
+@media(max-width:1000px) {
+      .vagbeskrivning{
+            font-size: 15px;
+        }
+        .vag_rubrik_h2{
+            font-size: 20px;
+        }
+        .vag_rubrik{
+            font-size: 18px;
+        }
+        .information{
+            width:80vw;
+        }
+       .tid,.kontakt{
+            color: #093609;
+             font-size: 10px;
+}
+        .tids_tabell{
+            width: 80vw;
+        }
+       .rubrik_tider,.rubrik_kontakt{
+         color: #093609;
+            font-size: 20px;
+}
+    
 }
