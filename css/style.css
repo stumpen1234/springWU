@@ -199,7 +199,26 @@ body{
        
         
     }
-    
+    .coffe_banner{
+        background-color: rgb(92, 113, 100);
+        width: 100vw;
+        min-height: 500px;
+        background-image:url(../img/coffe-banner.png);
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position: right;
+    }
+    .inbjudan{
+        color: rgb(235, 221, 221);
+        width: 20vw;
+         margin-left:70px;
+         margin-top: 70px;
+         letter-spacing: 0.2px;
+    }
+    .button{
+           height:25px;
+        width:75px;
+    }
     footer {
         background-color:#093609;
         height: auto;
@@ -263,6 +282,10 @@ body{
        }
        .text{
         width:20vw;
+       }
+       .button{
+        height:50px;
+        width:150px;
        }
     }   
 
