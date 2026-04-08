@@ -20,7 +20,7 @@ body{
         flex-direction: column;
 }
 
-    header { 
+    .navigation { 
         background-color: white;
         display: flex;
         flex-direction: row;
@@ -247,7 +247,7 @@ body{
 
 
     @media(min-width:1200px){
-        header{
+        .navigation{
             height:70px;
         }
        .phoNav{
@@ -551,4 +551,69 @@ ul{
             font-size: 20px;
 }
     
+}
+
+
+
+
+/* sida 3 */
+
+.FikaKlubb_banner{
+    background-image: url(../img/FikaKlubb-banner.png);
+    width: 100vw;
+    height:30vw ;
+}
+.fikaklubb_information{
+    padding-top:5vh;
+    width: 100vw;
+    height:auto;  
+    display: flex;
+    flex-direction: column;
+    background-color: white;  
+    padding-bottom:5vh;
+}
+.fikaklubb_rubrik{
+    padding-left: 35vw;
+    padding-right: 35vw;
+    color:#093609;
+}
+.fikaklubb_text{
+    padding-left: 35vw;
+    padding-right: 35vw;
+    color:#093609;
+}
+
+.fikaklubb_main{
+    width:100vw;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fikaklubb_main_rubrik{
+    font-size: 40px;
+}
+.fikaklubb_main_text{
+    font-size: 30px;
+    
+    color:#093609;
+    background-color:rgb(245, 230, 230);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10vw;
+    height: auto;
+}
+
+.fikaklubb_main_bilder{
+    width: 45vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.fikaklubb_icons{
+    height: 60px;
+    width: 60px;
 }
