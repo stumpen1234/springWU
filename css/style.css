@@ -14,6 +14,7 @@ body{
 
 ul{
     list-style: none;
+   padding: 0;
 }
 
 
@@ -208,7 +209,7 @@ ul{
         justify-content: space-between;
         background-color: rgb(92, 113, 100);
         width: 100vw;
-        height: 500px;
+        height: auto;
 
     }
     .banner{
@@ -273,6 +274,7 @@ ul{
         width:40vw;
         height:500px
        }
+     
         }
         
        
@@ -527,32 +529,7 @@ height: 90vh;
 
 
 
-@media(max-width:1000px) {
-      .hittaoss_plats_beskrivning{
-            font-size: 15px;
-        }
-        .hittaoss_rubrik{
-            font-size: 20px;
-        }
-        .hittaoss_plats{
-            font-size: 18px;
-        }
-        .hittaoss_information{
-            width:80vw;
-        }
-       .tid,.kontakt{
-            color: #093609;
-             font-size: 10px;
-}
-        .hittaoss_tider{
-            width: 80vw;
-        }
-       .rubrik_tider,.rubrik_kontakt{
-         color: #093609;
-            font-size: 20px;
-}
-    
-}
+
 
 
 
@@ -560,9 +537,13 @@ height: 90vh;
 /* sida 3 */
 
 .FikaKlubb_banner{
+    
     background-image: url(../img/FikaKlubb-banner.png);
     width: 100vw;
     height:30vw ;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .fikaklubb_information{
     padding-top:5vh;
@@ -604,8 +585,9 @@ height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 10vw;
+    width: 300px;
     height: auto;
+    padding:5px;
 }
 
 .fikaklubb_main_bilder{
@@ -614,6 +596,7 @@ height: 90vh;
     flex-direction: row;
     justify-content: space-between;
    margin-bottom: 20px;
+   
 }
 .fikaklubb_icons{
     height: 60px;
@@ -647,4 +630,59 @@ height: 90vh;
     flex-direction: row;
     font-size:20px;
    
+}
+
+@media(max-width:1000px){
+
+    /*hitta oss sidan*/
+          .hittaoss_plats_beskrivning{
+            font-size: 15px;
+        }
+        .hittaoss_rubrik{
+            font-size: 20px;
+        }
+        .hittaoss_plats{
+            font-size: 18px;
+        }
+        .hittaoss_information{
+            width:80vw;
+        }
+       .tid,.kontakt{
+            color: #093609;
+             font-size: 10px;
+}
+        .hittaoss_tider{
+            width: 80vw;
+        }
+       .rubrik_tider,.rubrik_kontakt{
+         color: #093609;
+            font-size: 20px;
+}
+
+.fikaklubb_rubrik{
+    padding-left: 20px ;
+      padding-right: 20px ;
+}
+.fikaklubb_text{
+        padding-left: 20px;
+    padding-right: 20px;
+}
+.fikaklubb_main_rubrik{
+    font-size: 25px;
+}
+.fikaklubb_main_bilder{
+    width: 100vw;
+
+}
+.fikaklubb_main_text{
+font-size: 20px;
+margin-left:10px
+}
+.fikaklubb_points_alternativ{
+    width:95vw;
+}
+.fikaklubb_points_option,.fikaklubb_points_text{
+    font-size: 15px;
+}
+
 }
