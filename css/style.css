@@ -613,8 +613,38 @@ height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+   margin-bottom: 20px;
 }
 .fikaklubb_icons{
     height: 60px;
     width: 60px;
+}
+
+.fikaklubb_points{
+    width: 100vw;
+    background-color: rgb(245, 230, 230);
+    height:auto;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.fikaklubb_points_rubrik{
+    color: #093609;
+}
+
+.fikaklubb_points_alternativ{
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    align-items: center;
+}
+.fikaklubb_points_option{
+    color:#093609;
+    font-size: 25px;
+}
+.fikaklubb_points_text{
+    display: flex;
+    flex-direction: row;
+    font-size:20px;
+   
 }
