@@ -250,66 +250,7 @@ ul{
 
 
 
-    @media(min-width:1200px){
-        .navigation{
-            height:70px;
-        }
-       .phoNav{
-            display:none;
-        }
-        .lapNav{
-            display: flex;
-        }
-        .main{
-            min-height:80vh;
-            justify-content: left;
-            padding-top: 70px;
-                 }
-      
-       .button{
-        height:50px;
-        width:150px;
-       }
-      .banner{
-        width:40vw;
-        height:500px
-       }
-     
-        }
-        
-       
-    /* såg lite konstigt ut när man minskade så ändrade det  genom lägga till en till media */
-    @media(min-width:1000px){
-        .main_rubrik{
-        margin-top:65px;
-        margin-bottom: 870PX;
-        width:30VW;
-        margin-left: 150px;
-        height: auto;
-        background-color: rgba(234, 225, 225, 0.63);
-       }
-       h2{
-        color: #093609;
-        font-size: 50px;
-       }
-       p{
-        color: #093609;
-        font-size: 20px;
-       }
-       .veckans_bakelse{
-        justify-content: center;
-        flex-direction: row;
-        
-       }
-       .veckans_bakelse_bild{
-        width:25vw;
-        height:18vw
-       }
-         .veckans_bakelse_text{
-        width:20vw;
-       }
-    
-}
+
 
 
     /* sida:meny */ 
@@ -372,7 +313,7 @@ align-items: center;
        background-color: white;
 }
 .nav{
-
+font-family: sans-serif;
     display: flex;
     align-items: center;
     flex-shrink: 0;
@@ -423,37 +364,7 @@ align-items: center;
     height:20vh;
 }
 
-@media(max-width:1000px){
 
-        .meny{
-            padding-left:0;
-            padding-right: 0px;
-            
-            
-            
-        }
-        #Varma_Drycker,#Kaffe,#Kalla_Drycker,#Te,#Mackor,#Lunch,#Bakverk{
-            padding-left: 10px;
-        }
-        .item_menu{
-            top:30px;
-             overflow-x: scroll;
-    overflow-y: hidden;
-        }
-        .display{
-            width: 90vw;
-            padding-left: 10vw;
-        }
-        .meny_beskrivning{
-            font-size: 15px;
-            letter-spacing: 0px;
-            width: auto;
-        }
-        .beskrivning{
-            margin-left: 10px;
-        }
-      
-}
 
 
 
@@ -553,11 +464,13 @@ height: 90vh;
     flex-direction: column;
     background-color: white;  
     padding-bottom:5vh;
+    font-family: Sans-serif;
 }
 .fikaklubb_rubrik{
     padding-left: 35vw;
     padding-right: 35vw;
     color:#093609;
+    font-family: Sans-serif;
 }
 .fikaklubb_text{
     padding-left: 35vw;
@@ -575,10 +488,11 @@ height: 90vh;
 }
 .fikaklubb_main_rubrik{
     font-size: 40px;
+    font-family: Sans-serif;
 }
 .fikaklubb_main_text{
-    font-size: 30px;
-    
+    font-size: 25px;
+    font-family: Sans-serif;
     color:#093609;
     background-color:rgb(245, 230, 230);
     border-radius: 10px;
@@ -588,6 +502,7 @@ height: 90vh;
     width: 300px;
     height: auto;
     padding:5px;
+    
 }
 
 .fikaklubb_main_bilder{
@@ -613,6 +528,7 @@ height: 90vh;
 }
 .fikaklubb_points_rubrik{
     color: #093609;
+    font-family: Sans-serif;
 }
 
 .fikaklubb_points_alternativ{
@@ -620,6 +536,7 @@ height: 90vh;
     flex-direction: row;
     width: 70vw;
     align-items: center;
+    font-family: Sans-serif;
 }
 .fikaklubb_points_option{
     color:#093609;
@@ -632,7 +549,100 @@ height: 90vh;
    
 }
 
+/*gjorde fel så fick ändra till dator aspekt istället */
+
+    @media(min-width:1200px){
+        .navigation{
+            height:70px;
+        }
+       .phoNav{
+            display:none;
+        }
+        .lapNav{
+            display: flex;
+        }
+        .main{
+            min-height:80vh;
+            justify-content: left;
+            padding-top: 70px;
+                 }
+      
+       .button{
+        height:50px;
+        width:150px;
+       }
+      .banner{
+        width:40vw;
+        height:500px
+       }
+     
+        }
+        
+       
+    /* såg lite konstigt ut när man minskade så ändrade det  genom lägga till en till media */
+    @media(min-width:1000px){
+        .main_rubrik{
+        margin-top:65px;
+        margin-bottom: 870PX;
+        width:30VW;
+        margin-left: 150px;
+        height: auto;
+        background-color: rgba(234, 225, 225, 0.63);
+       }
+       h2{
+        color: #093609;
+        font-size: 50px;
+       }
+       p{
+        color: #093609;
+        font-size: 20px;
+       }
+       .veckans_bakelse{
+        justify-content: center;
+        flex-direction: row;
+        
+       }
+       .veckans_bakelse_bild{
+        width:25vw;
+        height:18vw
+       }
+         .veckans_bakelse_text{
+        width:20vw;
+       }
+    
+}
+
 @media(max-width:1000px){
+
+/*Sida:meny */
+        .main_meny{
+            padding-left:0;
+            padding-right: 0px;
+            
+            
+            
+        }
+        #Varma_Drycker,#Kaffe,#Kalla_Drycker,#Te,#Mackor,#Lunch,#Bakverk{
+            padding-left: 10px;
+        }
+        .item_menu{
+            top:30px;
+             overflow-x: scroll;
+    overflow-y: hidden;
+        }
+        .display{
+            width: 90vw;
+            padding-left: 10vw;
+        }
+        .meny_beskrivning{
+            font-size: 15px;
+            letter-spacing: 0px;
+            width: auto;
+        }
+        .beskrivning{
+            margin-left: 10px;
+        }
+
 
     /*hitta oss sidan*/
           .hittaoss_plats_beskrivning{
@@ -659,6 +669,7 @@ height: 90vh;
             font-size: 20px;
 }
 
+/* Sida:Fikaklubb */
 .fikaklubb_rubrik{
     padding-left: 20px ;
       padding-right: 20px ;
