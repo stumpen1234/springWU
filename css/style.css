@@ -207,23 +207,22 @@ ul{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background-color: rgb(92, 113, 100);
+        background-color: rgb(62, 74, 67);
         width: 100vw;
         height: auto;
 
     }
     .banner{
         margin-top: auto;
-        width: 50vw;
-        height:200px
+        width: 45vw;
+        height:50vw;
     }
     .coffe_banner_text{
-        color: rgb(235, 221, 221);
+        color: rgb(255, 255, 255);
         width: 40vw;
-         margin-left:70px;
-         margin-top: 70px;
+         margin-left:10px;
+         margin-top: 10px;
          letter-spacing: 0.2px;
-         z-index: 2;
     }
     .button{
            height:25px;
@@ -322,7 +321,7 @@ font-family: sans-serif;
     font-size: 30px;
     white-space: nowrap;
 }
-#Varma_Drycker,#Kaffe,#Kalla_Drycker,#Te,#Mackor,#Lunch,#Bakverk{
+#Varma_Drycker,#Kaffe,#Kalla_Drycker,#Te,#Mackor,#Lunch,#bakverk{
     margin-top:100px;
     margin-bottom: 20px;
   
@@ -448,7 +447,7 @@ height: 90vh;
 /* sida 3 */
 
 .FikaKlubb_banner{
-    
+    padding-top:200px;
     background-image: url(../img/FikaKlubb-banner.png);
     width: 100vw;
     height:30vw ;
@@ -502,6 +501,7 @@ height: 90vh;
     width: 300px;
     height: auto;
     padding:5px;
+    margin-right: 7px;
     
 }
 
@@ -578,7 +578,6 @@ height: 90vh;
      
         }
         
-       
     /* såg lite konstigt ut när man minskade så ändrade det  genom lägga till en till media */
     @media(min-width:1000px){
         .main_rubrik{
@@ -588,6 +587,7 @@ height: 90vh;
         margin-left: 150px;
         height: auto;
         background-color: rgba(234, 225, 225, 0.63);
+       
        }
        h2{
         color: #093609;
@@ -609,9 +609,15 @@ height: 90vh;
          .veckans_bakelse_text{
         width:20vw;
        }
+       .banner{
+        width:auto;
+        height:30vh;
+       }
+       .coffe_banner_text{
+        margin-top:30px;
+       }
     
 }
-
 @media(max-width:1000px){
 
 /*Sida:meny */
@@ -622,17 +628,20 @@ height: 90vh;
             
             
         }
+        .food-itmes{
+            padding-top: 30px;
+        }
         #Varma_Drycker,#Kaffe,#Kalla_Drycker,#Te,#Mackor,#Lunch,#Bakverk{
-            padding-left: 10px;
+            margin-left: 10px;
         }
         .item_menu{
             top:30px;
              overflow-x: scroll;
-    overflow-y: hidden;
+        overflow-y: hidden;
         }
         .display{
-            width: 90vw;
-            padding-left: 10vw;
+            width: 98vw;
+         margin-left: 2vw;
         }
         .meny_beskrivning{
             font-size: 15px;
@@ -686,7 +695,7 @@ height: 90vh;
 
 }
 .fikaklubb_main_text{
-font-size: 20px;
+font-size: 15px;
 margin-left:10px
 }
 .fikaklubb_points_alternativ{
