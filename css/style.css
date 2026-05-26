@@ -34,6 +34,7 @@ ul{
         width:100vw;
         position: fixed;
         border-radius: 0px 0px 5px 5px;
+        z-index: 1000;
     }
     .hamburgerMenu{
         background-color: white;
@@ -134,7 +135,7 @@ ul{
         padding-top:40px;
         min-height:50vh;
         width:100vw;        
-        background-image: url(../img/banner3.webp);
+        background-image: url(../img/banner2.jpg);
         background-size:cover;
         background-position: center;
         background-repeat:no-repeat;
@@ -165,6 +166,7 @@ ul{
     .veckans_bakelse{
         display: flex;
         flex-direction: column;
+        align-items: center;
         padding: 30px;
         background-color: white;
         height:AUTO;
@@ -192,14 +194,14 @@ ul{
     
     .veckans_bakelse_bild {
         
-        max-width: 1000px;
-        min-height: 300px;
+        width:70vw;
+        min-height: 450px;
         border-radius: 10px;
-        background-image: url(../img/semla.png);
+        background-image: url(../img/semla.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        margin: 10px;
+        
        
         
     }
@@ -207,18 +209,18 @@ ul{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background-color: rgb(62, 74, 67);
+        background-color: rgb(206, 230, 216);
         width: 100vw;
         height: auto;
 
     }
     .banner{
-        margin-top: auto;
+        margin-top:auto;
         width: 45vw;
-        height:50vw;
+        height:15vh;
     }
     .coffe_banner_text{
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
         width: 40vw;
          margin-left:10px;
          margin-top: 10px;
@@ -268,14 +270,18 @@ ul{
 .beskrivning{
     margin-left: 20vw;
 }
+#Menu_container{
+    display:flex;
+    flex-direction: row-reverse;
+     background-color: rgb(243, 238, 238);
+}
 .main_meny{
-    padding-left:30vw;
-    padding-right:30vw;
+    width:70vw;
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: rgb(243, 238, 238);
-    height: auto;
-    width:auto;
+    height:auto;
     
 }
 .rubrik2{
@@ -298,18 +304,20 @@ ul{
 
 
 .item_menu{
+    border-radius: 20px;
 
     width: auto;
     top:70px;
     display: flex;
+    flex-direction: column;
 justify-content: space-evenly;
 align-items: center;
-    height:AUTO;
-    flex-wrap: nowrap;
     gap:20px;
      position:sticky;
        z-index:900;
-       background-color: white;
+       background-color: rgb(243, 233, 233);
+       width: 30vw;
+       height:50vh;
 }
 .nav{
 font-family: sans-serif;
@@ -322,9 +330,9 @@ font-family: sans-serif;
     white-space: nowrap;
 }
 #Varma_Drycker,#Kaffe,#Kalla_Drycker,#Te,#Mackor,#Lunch,#bakverk{
-    margin-top:100px;
+    display: flex;
+    top:50px;
     margin-bottom: 20px;
-  
     font-family: "Caveat Brush";
     font-size: 50px;
     color:#093609;
@@ -342,7 +350,7 @@ font-family: sans-serif;
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
-   width:40vw;
+    gap:10px
     
 }
 .box{
@@ -350,17 +358,17 @@ font-family: sans-serif;
     flex-direction: column;
     
     align-items: center;
-    margin-bottom: 20px;
-    margin-right:30px;
     height:auto;
-    width:auto;
-
+    width:250px;
+    padding:15px;
     background-color:rgb(243, 233, 233);
     border-radius: 20px;
 }
 .items{
     width: auto;;
     height:20vh;
+      filter: sepia(30%) saturate(130%) brightness(92%) hue-rotate(-10deg);
+
 }
 
 
@@ -371,7 +379,7 @@ font-family: sans-serif;
    .hittaoss_banner{
 width: 100vw;
 height: 90vh;
-   background-image: url(../img/coffee-shop.png);
+   background-image: url(../img/banner5.jpg);
    background-position: center;
    background-size:cover;
    background-repeat: no-repeat;
@@ -448,7 +456,7 @@ height: 90vh;
 
 .FikaKlubb_banner{
     padding-top:200px;
-    background-image: url(../img/FikaKlubb-banner.png);
+    background-image: url(../img/banner.jpg);
     width: 100vw;
     height:30vw ;
     background-position:center;
@@ -603,15 +611,15 @@ height: 90vh;
         
        }
        .veckans_bakelse_bild{
-        width:25vw;
-        height:18vw
+        width:27vw;
+        height:20vw
        }
          .veckans_bakelse_text{
         width:20vw;
        }
        .banner{
-        width:auto;
-        height:30vh;
+        width:30vw;
+        height:20vh;
        }
        .coffe_banner_text{
         margin-top:30px;
@@ -621,9 +629,13 @@ height: 90vh;
 @media(max-width:1000px){
 
 /*Sida:meny */
+#Menu_container{
+    flex-direction: column;
+}
         .main_meny{
             padding-left:0;
             padding-right: 0px;
+            width:100vw;
             
             
             
@@ -635,13 +647,18 @@ height: 90vh;
             margin-left: 10px;
         }
         .item_menu{
+       flex-wrap: nowrap;
             top:30px;
              overflow-x: scroll;
         overflow-y: hidden;
+        flex-direction:row ;
+        height:auto;
+        width: auto;
+        background-color: white;
         }
         .display{
             width: 98vw;
-         margin-left: 2vw;
+     
         }
         .meny_beskrivning{
             font-size: 15px;
@@ -651,9 +668,17 @@ height: 90vh;
         .beskrivning{
             margin-left: 10px;
         }
+        .box{
+            width:200px;
+            
+        }
+
 
 
     /*hitta oss sidan*/
+    .hittaoss_banner{
+        height:60vh
+    }
           .hittaoss_plats_beskrivning{
             font-size: 15px;
         }
