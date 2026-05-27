@@ -130,8 +130,6 @@ ul{
     }
     
     .main{
-        display: flex;
-        justify-content:center;
         padding-top:40px;
         min-height:50vh;
         width:100vw;        
@@ -142,10 +140,12 @@ ul{
      
     }
     .main_rubrik{
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
         font-family: Sans-serif;
        margin-bottom:560px; 
-        background-color:transparent;
-        margin-left:60px;
+      
         width: 60VW;
         height: auto;
         background-color: rgba(234, 225, 225, 0.527);
@@ -154,12 +154,12 @@ ul{
     h2{
         margin:0px;
         color:#093609;
-        font-size: 30px;
+        font-size: 21;
     }
     p{
         margin: 0px;
         color:#093609;
-        font-size: 15px;
+        font-size: 13;
     }
   
     
@@ -167,12 +167,13 @@ ul{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 30px;
+        justify-content: space-between;
         background-color: white;
         height:AUTO;
     }
     
     .veckans_bakelse_text {
+       min-width:45vw;
         display: flex;
         flex-direction: column;
         margin:10px;
@@ -182,11 +183,11 @@ ul{
     }
     h3{
         font-family: Sans-serif;
-        font-size: 30px;
+        font-size: 31px;
         color: #093609;
     }
     .veckans_bakelse_paragraf{
-        font-size: 20px;
+        font-size: 21;
         line-height: 20px;
         color:#093609;
 
@@ -194,8 +195,8 @@ ul{
     
     .veckans_bakelse_bild {
         
-        width:70vw;
-        min-height: 450px;
+        min-width:90vw;
+        min-height:350px;
         border-radius: 10px;
         background-image: url(../img/semla.jpg);
         background-repeat: no-repeat;
@@ -227,8 +228,8 @@ ul{
          letter-spacing: 0.2px;
     }
     .button{
-           height:25px;
-        width:75px;
+           height:35px;
+        width:85px;
     }
     footer {
         background-color:#093609;
@@ -237,7 +238,7 @@ ul{
 
     h4,h5{
         font-family: Sans-serif;
-        font-size: 20px;
+        font-size: 21px;
         color:white;
     }
     li{
@@ -268,7 +269,7 @@ ul{
     width: 100vw;
 }
 .beskrivning{
-    margin-left: 20vw;
+    margin-left: 1vw;
 }
 #Menu_container{
     display:flex;
@@ -294,7 +295,7 @@ ul{
 
 }
 .meny_beskrivning{
-    font-size: 20px;
+    font-size: 21px;
     width: 50vw;
     color: #093609;
     letter-spacing: 1px;
@@ -305,8 +306,8 @@ ul{
 
 .item_menu{
     border-radius: 20px;
+    
 
-    width: auto;
     top:70px;
     display: flex;
     flex-direction: column;
@@ -317,7 +318,7 @@ align-items: center;
        z-index:900;
        background-color: rgb(243, 233, 233);
        width: 30vw;
-       height:50vh;
+       height:70vh;
 }
 .nav{
 font-family: sans-serif;
@@ -326,7 +327,7 @@ font-family: sans-serif;
     flex-shrink: 0;
     width: auto;
     height: auto;
-    font-size: 30px;
+    font-size: 31px;
     white-space: nowrap;
 }
 #Varma_Drycker,#Kaffe,#Kalla_Drycker,#Te,#Mackor,#Lunch,#bakverk{
@@ -396,18 +397,18 @@ height: 90vh;
 .hittaoss_plats_beskrivning{
     font-size: 20px;
     color:#093609;
-    text-align: center;
+    
    
 }   
 .hittaoss_rubrik{
     margin-top: 140px;
-    font-size: 30px;
+    font-size: 21;
     color: #093609;
-    text-align: center;
+   
 }
 .hittaoss_plats{
     margin-top: 150px;
-    font-size: 25px;
+    font-size: 21;
     color:#093609;
     text-align: center;
     
@@ -437,12 +438,12 @@ height: 90vh;
 }
 .tid,.kontakt{
     color: #093609;
-    font-size: 20px;
+    font-size: 21;
 }
 
 .rubrik_tider,.rubrik_kontakt{
     color: #093609;
-    font-size: 30px;
+    font-size: 34;
 }
 
 
@@ -474,14 +475,18 @@ height: 90vh;
     font-family: Sans-serif;
 }
 .fikaklubb_rubrik{
-    padding-left: 35vw;
-    padding-right: 35vw;
+    display:flex;
+    justify-content: center;
+    
     color:#093609;
     font-family: Sans-serif;
 }
 .fikaklubb_text{
-    padding-left: 35vw;
-    padding-right: 35vw;
+    display: flex;
+    justify-content: center;
+    font-size: 13;
+    padding-left: 1vw;
+    padding-right: 1vw;
     color:#093609;
 }
 
@@ -492,13 +497,15 @@ height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .fikaklubb_main_rubrik{
-    font-size: 40px;
+ 
+    font-size: 34;
     font-family: Sans-serif;
 }
 .fikaklubb_main_text{
-    font-size: 25px;
+    font-size: 13;
     font-family: Sans-serif;
     color:#093609;
     background-color:rgb(245, 230, 230);
@@ -548,12 +555,12 @@ height: 90vh;
 }
 .fikaklubb_points_option{
     color:#093609;
-    font-size: 25px;
+    font-size: 21px;
 }
 .fikaklubb_points_text{
     display: flex;
     flex-direction: row;
-    font-size:20px;
+    font-size:13;
    
 }
 
@@ -599,20 +606,21 @@ height: 90vh;
        }
        h2{
         color: #093609;
-        font-size: 50px;
+        font-size: 34px;
        }
        p{
         color: #093609;
-        font-size: 20px;
+        font-size: 21px;
        }
        .veckans_bakelse{
+        height:500px;
         justify-content: center;
         flex-direction: row;
         
        }
        .veckans_bakelse_bild{
-        width:27vw;
-        height:20vw
+       min-width:40vw;
+        min-height:450px;
        }
          .veckans_bakelse_text{
         width:20vw;
@@ -620,6 +628,9 @@ height: 90vh;
        .banner{
         width:30vw;
         height:20vh;
+       }
+       .coffe_banner{
+        height:23vh;
        }
        .coffe_banner_text{
         margin-top:30px;
@@ -661,7 +672,7 @@ height: 90vh;
      
         }
         .meny_beskrivning{
-            font-size: 15px;
+            font-size: 13px;
             letter-spacing: 0px;
             width: auto;
         }
@@ -713,6 +724,9 @@ height: 90vh;
     padding-right: 20px;
 }
 .fikaklubb_main_rubrik{
+    display: flex;
+    justify-content: center;
+    padding:10px;
     font-size: 25px;
 }
 .fikaklubb_main_bilder{
