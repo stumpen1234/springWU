@@ -66,7 +66,8 @@ ul{
         margin-left:10px;
         color:#093609;
         font-size:40px;
-        margin-bottom:40px;
+        padding-top: 20px;
+        margin-bottom:20px;
     }
     .tiny{
         font-family: Sans-serif;
@@ -212,7 +213,7 @@ ul{
         justify-content: space-between;
         background-color: rgb(206, 230, 216);
         width: 100vw;
-        height: auto;
+        min-height:30vh;
 
     }
     .banner{
@@ -228,8 +229,8 @@ ul{
          letter-spacing: 0.2px;
     }
     .button{
-           height:35px;
-        width:85px;
+           height:45px;
+        width:95px;
     }
     footer {
         background-color:#093609;
